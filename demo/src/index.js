@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Example from './example';
 import Dashboard from './dashboard';
@@ -25,16 +25,10 @@ class Demo extends Component {
     return (
       <Router>
         <GlobalStyle />
-
-        <Switch>
-          <Route path={`/`} exact={true}>
-            <Example />
-          </Route>
-
-          <Route path={`/dashboard`}>
-            <Dashboard />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Example />} exact={true} />
+          <Route path={`/dashboard`} element={<Dashboard />} />
+        </Routes>
       </Router>
     );
   }

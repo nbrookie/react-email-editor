@@ -1,7 +1,7 @@
 {
-  "name": "react-email-editor",
-  "version": "1.5.0",
-  "description": "Unlayer's Email Editor Component for React.js",
+  "name": "unlayer-editor-react",
+  "version": "2.0.0",
+  "description": "Unlayer's Email Editor Component for React.js. UPDATED FOR React v17 and React Router v6",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -19,22 +19,20 @@
     "test:watch": "nwb test-react --server",
     "release": "npm run build && npm publish"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "15.x || 16.x"
-  },
   "devDependencies": {
-    "nwb": "^0.22.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "styled-components": "^4.2.0"
+    "nwb": "^0.25.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2",
+    "styled-components": "^4.4.1"
   },
   "author": "",
-  "homepage": "https://github.com/unlayer/react-email-editor#readme",
+  "homepage": "https://github.com/barnent1/unlayer-editor-react#readme",
   "license": "MIT",
-  "repository": "https://github.com/unlayer/react-email-editor.git",
+  "repository": "https://github.com/barnent1/unlayer-editor-react.git",
   "keywords": [
-    "react-component"
+    "react-component",
+    "unlayer",
+    "react email editor"
   ]
 }
